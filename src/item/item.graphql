@@ -1,0 +1,34 @@
+type Item {
+  _id: String!
+  name: String!
+  description: String!
+  quantity: Int!
+}
+
+input ItemInput {
+  name: String!
+  description: String!
+  quantity: Int!
+}
+
+input ItemUpdate {
+  name: String
+  description: String
+  quantity: Int
+}
+
+type Query {
+  items: [Item!]
+  item(id: String!): Item
+}
+
+type Mutation {
+  createItem(input: ItemInput!): Item
+  deleteItem(id: String!): Boolean
+  updateItem(id: String!, input: ItemUpdate): Item
+}
+
+type Subscription {
+	itemCreated: Item
+  itemUpdated: Item
+}
