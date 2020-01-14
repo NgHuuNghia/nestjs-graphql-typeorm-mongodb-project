@@ -2,7 +2,6 @@ import {
   ArgumentMetadata,
   Injectable,
   PipeTransform,
-  BadRequestException,
   HttpException,
   HttpStatus,
 } from '@nestjs/common';
@@ -12,13 +11,7 @@ import { plainToClass } from 'class-transformer';
 @Injectable()
 export class ValidationPipe implements PipeTransform {
   async transform(value: any, metadata: ArgumentMetadata) {
-    // if (value instanceof Object && this.isEmpty(value)) {
-    //   throw new HttpException(
-    //     'Validation failed: No body submitted',
-    //     HttpStatus.BAD_REQUEST,
-    //   );
-    // }
-    // destructuring metadata
+
     const { metatype } = metadata;
     if (!metatype || !this.toValidate(metatype)) {
       return value;
@@ -49,11 +42,4 @@ export class ValidationPipe implements PipeTransform {
       })
       .join(', ');
   }
-
-  // private isEmpty(value: any) {
-  //   if (Object.keys(value).length > 0) {
-  //     return false;
-  //   }
-  //   return true;
-  // }
 }

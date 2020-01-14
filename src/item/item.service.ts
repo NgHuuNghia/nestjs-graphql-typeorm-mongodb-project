@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { ItemInput, ItemUpdate } from './item.entity';
+import { Item, ItemInput, ItemUpdate } from './item.entity';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Item } from './item.entity';
 import { MongoRepository } from 'typeorm';
 import * as uuid from 'uuid';
 

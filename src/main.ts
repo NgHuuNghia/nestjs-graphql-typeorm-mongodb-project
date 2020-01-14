@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { Logger } from '@nestjs/common';
-import { ValidationPipe } from './pipes/validation.pipe';
+import { ValidationPipe } from './common/pipes/validation.pipe';
 const port = process.env.PORT || 3000;
 
 async function bootstrap() {

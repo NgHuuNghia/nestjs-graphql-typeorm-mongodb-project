@@ -3538,8 +3538,8 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
       "../src/item/item.service.ts": {
-        "version": "2f5a5a9fab62cdacbd703b73912861d9ab74f02658afb4bb270e8b11c3b4521d",
-        "signature": "d7bc0e51b5254a3c1d3826f8070b8249f81f1ac1284711c15cab8dacec7436b7"
+        "version": "cc4c4db03783606b724f8e2f993fb4faa7e93ad2d5533d1b2bc56a9c73f0c971",
+        "signature": "9a7897f8c4844000c59f6c028d31419b93edf7c9ed4d8840766ba9de634af13c"
       },
       "../node_modules/graphql-subscriptions/dist/pubsub-engine.d.ts": {
         "version": "4c9aded23c1eb21c4d7a4b03edb29e0611ee88975520a4aa8514186bb22cf20c",
@@ -3565,12 +3565,36 @@
         "version": "414d46088cc37c438453448c02895a84c61061f16435772401e972de4379ae0a",
         "signature": "39efc0191be79c9b390318fe686447492c83693393f2cb376952d1666338d5d0"
       },
-      "../src/config/keys.ts": {
+      "../src/user/user.entity.ts": {
+        "version": "56979fc347dd93ef0a13f7101479a08d2eb5003617d259f717dcbb232cb8a96e",
+        "signature": "fe1f7d64f6a4ac9df907dc336b2de167f6eea576a43fc8d260ff357728749993"
+      },
+      "../src/auth/auth.entity.ts": {
+        "version": "dcb657a89e2615e50641a9e5145aa4f2d471e94abfa52e36c476ef7e9869b9ad",
+        "signature": "f3732253cd973edfba0ef76eaf49af42ab3a2f033cba3f7e35c3f86da75af49b"
+      },
+      "../src/user/user.service.ts": {
+        "version": "34bbe8d86e76c87f374c063f5099509cb627ff0746410fa234629bc518eaecd5",
+        "signature": "f8a8be58cf2b89e8c65ebd7c7f80a8043c83259d0f8955a4c9f48077aeb77dbb"
+      },
+      "../src/common/guards/auth.guard.ts": {
+        "version": "1d05b4b72c1f6c5a5bdd78988acfdf9f47ee9ab9fdb19c6f0048e73b3a28618b",
+        "signature": "4a86903a1bb8f59bc698bb7c66514f70f509d522da417df4b796c4cce8227667"
+      },
+      "../src/user/user.resolver.ts": {
+        "version": "9dd1e249d6d0c067a00a8a66a7f2a17741229c2725fd4548423f4f32606f82a8",
+        "signature": "2c4ed94e016e67d6b1493189a96ccb7e5581926bd6d235b3818604dd99476255"
+      },
+      "../src/user/user.module.ts": {
+        "version": "9e71d39fdf86e6b9eebdc60b2c256c9ce5a4670bdfc1ab5c7b911f37430c11a0",
+        "signature": "482b8f0d35a3d453500a15b6c6057c1e4c40baa4329b39da9e1026d8e1de4329"
+      },
+      "../src/common/config/keys.ts": {
         "version": "93669410dc3c296b5e2caa41630f6b9d2967ec7b9841e1b2e44756343361e661",
         "signature": "65dba4176b8b6bed97caca241289891acffef895cc7eb6a8ce8eec50a3eca36d"
       },
       "../src/app.module.ts": {
-        "version": "2bfd4b70ae0f790de3788d5c94a140465c1fc142762701582ae8023119f361b3",
+        "version": "64343824ed21be774e8499f5106c8a05ea4314c730b3b5f8c8b263bb9356325b",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644"
       },
       "../node_modules/class-transformer/ClassTransformOptions.d.ts": {
@@ -3601,13 +3625,17 @@
         "version": "097d4bf3331df1e138ffdcf92e1117f6841bc8337170d927fd955d5ee8a1674b",
         "signature": "097d4bf3331df1e138ffdcf92e1117f6841bc8337170d927fd955d5ee8a1674b"
       },
-      "../src/pipes/validation.pipe.ts": {
-        "version": "4cea0df87714563569156ce8132875a826587dd916240c88ca1757fe308c9a37",
+      "../src/common/pipes/validation.pipe.ts": {
+        "version": "74c82627311b9793be1ed7cd43c429e19ec96098fc5e032f5fe750365435522e",
         "signature": "fc2995a81f0ad79d034e8dae7a2666f756c5bae68f04495b9e98f80e80d3b153"
       },
       "../src/main.ts": {
-        "version": "16863f7e23904e0391e06390c53f245fc61247929dbcfc26e86d4ce6ba7340a4",
+        "version": "cbdb4fd8da0c67f5d6497e2fd4a3419378853165a6c7ea0a53f4dcf1f73b64ad",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      "../src/common/decorators/auth.decorator.ts": {
+        "version": "21f833af58a0957eacd9c8131e670aa24d75aca69b2d551eaae211d6234b64ee",
+        "signature": "ac6dbae193b3acd59e57366df0cba75b36d9cca95a3affa574c12288032738f9"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -11719,7 +11747,66 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/config/keys.ts": [
+      "../src/user/user.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/auth/auth.entity.ts": [
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/user/user.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/user/user.entity.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/auth/auth.entity.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/common/guards/auth.guard.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/@types/node/os.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/user/user.resolver.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/user/user.service.ts",
+        "../src/user/user.entity.ts",
+        "../node_modules/graphql-subscriptions/dist/index.d.ts",
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/common/guards/auth.guard.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/user/user.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/user/user.resolver.ts",
+        "../src/user/user.service.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/user/user.entity.ts",
+        "../node_modules/graphql-subscriptions/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/common/config/keys.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -11731,7 +11818,8 @@
         "../src/item/item.module.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../node_modules/@types/node/path.d.ts",
-        "../src/config/keys.ts",
+        "../src/user/user.module.ts",
+        "../src/common/config/keys.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -11790,7 +11878,7 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/pipes/validation.pipe.ts": [
+      "../src/common/pipes/validation.pipe.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/class-validator/index.d.ts",
         "../node_modules/class-transformer/index.d.ts",
@@ -11803,7 +11891,14 @@
         "../node_modules/@nestjs/core/index.d.ts",
         "../src/app.module.ts",
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/pipes/validation.pipe.ts",
+        "../src/common/pipes/validation.pipe.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/common/decorators/auth.decorator.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -20471,6 +20566,20 @@
         "../src/item/item.service.ts",
         "../src/item/item.entity.ts"
       ],
+      "../src/user/user.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/user/user.entity.ts",
+        "../src/auth/auth.entity.ts"
+      ],
+      "../src/common/guards/auth.guard.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../src/user/user.resolver.ts": [
+        "../src/auth/auth.entity.ts",
+        "../node_modules/graphql-subscriptions/dist/index.d.ts",
+        "../src/user/user.service.ts",
+        "../src/user/user.entity.ts"
+      ],
       "../node_modules/class-transformer/ClassTransformOptions.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -20524,7 +20633,7 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/pipes/validation.pipe.ts": [
+      "../src/common/pipes/validation.pipe.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
       ],
       "../node_modules/@types/anymatch/index.d.ts": [
@@ -22501,6 +22610,7 @@
       "../node_modules/class-validator/metadata/ConstraintMetadata.d.ts",
       "../node_modules/class-validator/metadata/MetadataStorage.d.ts",
       "../node_modules/class-validator/index.d.ts",
+      "../src/item/item.entity.ts",
       "../node_modules/@nestjs/typeorm/dist/common/typeorm.decorators.d.ts",
       "../node_modules/@nestjs/typeorm/dist/common/typeorm.utils.d.ts",
       "../node_modules/@nestjs/typeorm/dist/common/index.d.ts",
@@ -22516,7 +22626,12 @@
       "../node_modules/graphql-subscriptions/dist/index.d.ts",
       "../src/item/item.resolver.ts",
       "../src/item/item.module.ts",
-      "../src/config/keys.ts",
+      "../src/user/user.entity.ts",
+      "../src/auth/auth.entity.ts",
+      "../src/common/guards/auth.guard.ts",
+      "../src/user/user.resolver.ts",
+      "../src/user/user.module.ts",
+      "../src/common/config/keys.ts",
       "../src/app.module.ts",
       "../node_modules/class-transformer/ClassTransformOptions.d.ts",
       "../node_modules/class-transformer/ClassTransformer.d.ts",
@@ -22525,8 +22640,9 @@
       "../node_modules/class-transformer/TransformOperationExecutor.d.ts",
       "../node_modules/class-transformer/decorators.d.ts",
       "../node_modules/class-transformer/index.d.ts",
-      "../src/pipes/validation.pipe.ts",
+      "../src/common/pipes/validation.pipe.ts",
       "../src/main.ts",
+      "../src/common/decorators/auth.decorator.ts",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@types/babel__generator/index.d.ts",
@@ -22652,7 +22768,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/item/item.entity.ts"
+      "../src/user/user.service.ts"
     ]
   },
   "version": "3.7.4"

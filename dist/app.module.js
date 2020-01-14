@@ -11,7 +11,8 @@ const graphql_1 = require("@nestjs/graphql");
 const item_module_1 = require("./item/item.module");
 const typeorm_1 = require("@nestjs/typeorm");
 const path_1 = require("path");
-const keys_1 = require("./config/keys");
+const user_module_1 = require("./user/user.module");
+const keys_1 = require("./common/config/keys");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -28,10 +29,12 @@ AppModule = __decorate([
             }),
             graphql_1.GraphQLModule.forRoot({
                 typePaths: ['./**/*.graphql'],
+                context: ({ req }) => ({ req }),
                 playground: true,
                 installSubscriptionHandlers: true,
             }),
             item_module_1.ItemModule,
+            user_module_1.UserModule,
         ],
         controllers: [],
         providers: [],

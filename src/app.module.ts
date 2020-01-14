@@ -3,7 +3,8 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { ItemModule } from './item/item.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { join } from 'path';
-import config from './config/keys';
+import { UserModule } from './user/user.module';
+import config from './common/config/keys';
 
 @Module({
   imports: [
@@ -18,10 +19,12 @@ import config from './config/keys';
   }),
   GraphQLModule.forRoot({
     typePaths: ['./**/*.graphql'],
+    context: ({ req }) => ({ req }),
     playground: true,
     installSubscriptionHandlers: true,
   }),
   ItemModule,
+  UserModule,
   ],
   controllers: [],
   providers: [],
