@@ -12,6 +12,7 @@ const user_service_1 = require("./user.service");
 const typeorm_1 = require("@nestjs/typeorm");
 const user_entity_1 = require("./user.entity");
 const graphql_subscriptions_1 = require("graphql-subscriptions");
+const user_controller_1 = require("./user.controller");
 let UserModule = class UserModule {
 };
 UserModule = __decorate([
@@ -21,6 +22,7 @@ UserModule = __decorate([
                 provide: 'PUB_SUB',
                 useValue: new graphql_subscriptions_1.PubSub(),
             }],
+        controllers: [user_controller_1.UserController],
     })
 ], UserModule);
 exports.UserModule = UserModule;

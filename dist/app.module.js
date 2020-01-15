@@ -13,6 +13,7 @@ const typeorm_1 = require("@nestjs/typeorm");
 const path_1 = require("path");
 const user_module_1 = require("./user/user.module");
 const keys_1 = require("./common/config/keys");
+const platform_express_1 = require("@nestjs/platform-express");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -32,6 +33,9 @@ AppModule = __decorate([
                 context: ({ req }) => ({ req }),
                 playground: true,
                 installSubscriptionHandlers: true,
+            }),
+            platform_express_1.MulterModule.register({
+                dest: './files',
             }),
             item_module_1.ItemModule,
             user_module_1.UserModule,

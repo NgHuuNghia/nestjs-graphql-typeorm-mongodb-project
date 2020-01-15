@@ -20,13 +20,13 @@ export class UserResolver {
         return this.userService.findOne(id);
     }
     @Mutation(() => User)
-    async signup(@Args('input') input: UserInput ) {
+    async signup(@Args('input') input: UserInput) {
         const registerUser = this.userService.signup(input);
         this.pubSub.publish('signupUser', { signupUser: registerUser });
         return registerUser;
     }
     @Mutation(() => User)
-    async login(@Args('input') input: UserInput ) {
+    async login(@Args('input') input: UserInput) {
         const rsloginUser = this.userService.login(input);
         this.pubSub.publish('loginUser', { loginUser: rsloginUser });
         return rsloginUser;
@@ -41,5 +41,4 @@ export class UserResolver {
     }
     // __.publish('XXX', { XXX: ___ });
     // __ asyncIterator('XXX');
-
 }

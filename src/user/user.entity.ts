@@ -1,5 +1,6 @@
 import { Entity, Column, ObjectIdColumn } from 'typeorm';
 import { IsString, MinLength, IsNotEmpty } from 'class-validator';
+import { Stream } from 'stream';
 
 @Entity()
 export class User {
